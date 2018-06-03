@@ -1,0 +1,22 @@
+<!--
+  Generated template for the PruebaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>prueba</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+  <button ion-item *ngFor="let usuario of usuarios">
+  {{usuario.id}} - {{usuario.name}} - {{usuario.age}}
+</button>
+</ion-list>
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+        HipoASSIST
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content text-center>
+
+      <form (submit)="login()">
+            <ion-col>
+            
+                      <ion-item>
+                          <ion-input [(ngModel)]=regData.name name="name" type="text" placeholder="Nombre"></ion-input>
+                       </ion-item>
+            
+               
+                <button ion-button clear type="submit">INGRESAR</button>
+              
+              
+            </ion-col>
+
+</form>
+<div padding>
+    <button ion-button (click)="irPagePrueba()">Ver usuarios</button>
+</div>
+<button ion-button clear (click)="registarUser()">Registrate</button>
+</ion-content>

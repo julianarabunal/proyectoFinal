@@ -1,0 +1,23 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>registracion</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<form (submit)="register()">
+  <ion-item>
+     <ion-input [(ngModel)]=regData.name name="name" type="text" placeholder="Nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]=regData.age name="age" type="text" placeholder="Edad"></ion-input>
+  </ion-item>
+  <button ion-button block type="submit">
+    Enviar
+  </button>
+</form>
+</ion-content>
